@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;}
+    html {
+        scroll-behavior: smooth;
+      }
+      
+.contact{
+    z-index: 111;
+    position: relative; /* Initial background color */
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+}
+.contact-now::after{
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    background-color: #262626;
+    width: 100%;
+    height: 100%;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+}
+img{
+    width: 100%;
+    
+}
+.image{
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    background-color: #EA580C;
+    width: 100%;
+    height: 100%;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+}
